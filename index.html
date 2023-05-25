@@ -17,31 +17,34 @@
 </head>
 
 <body>
+    <div id="backg" >
+     
      <input placeholder="    Pesquisar" type="text" id="pesquisa_resultado"></input>
      <button type="submit" id="enviar_pesquisa" onclick="search()">
-        <div id="lupa">
-            <image src="./assets/images/zoom.png" id="lupa"></image>
-        </div>
     </button>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <h1>Sugestão de local</h1>
-    <button id="saiba_mais"> Saiba mais</button>  <br><br><br>
+    <button id="saiba_mais"> <a href="./info.html"></a>Saiba mais</button><br><br><br>
+    </div>
     <div class="recomendacoes">
         <br><br>
         <h2>Recomendações</h2>
-        <br>
-        <p>imagens de recomendação aqui alalallalalalalalal</p>
-        <br>
-        <h2>Próximo a você</h2>
-        <br>
-        <p>imagens de recomendação aqui alalallalalalalalal</p>
-        <br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="rec">
+        <image src="./assets/catedral.jpeg"  height="320" width="350"></image>
+        <image src="./assets/parque.jpeg"    height="320" width="320"></image>
+        <image src="./assets/images/teatro.jpeg" height="320" width="350"></image>
     </div>
 
-
-
+        <h2>Próximo a você</h2>
+        <div id="rec">
+            <image src="./assets/images/bosque.jpeg"  height="320" width="350"></image>
+            <image src="./assets/images/show.jpeg"    height="320" width="320"></image>
+            <image src="./assets/images/par.jpeg" height="320" width="350"></image>
+      
+      </div>
+    </div>
 </body>
 </html>

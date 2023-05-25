@@ -1,17 +1,27 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
     font-family: 'Roboto', sans-serif;
-    background:  rgb(236, 236, 236);
+    background:  rgb(255, 255, 255);
+
+}
+
+#backg{
+    background: #FFFFFF url("https://scontent.fcac3-1.fna.fbcdn.net/v/t1.6435-9/147489475_1903786203108882_6471014805374559751_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-zjC0wyeUEEAX8sjzTr&_nc_ht=scontent.fcac3-1.fna&oh=00_AfB4WndaXW2WSy_8HRMMGsQCqPDDZhKV_dJZYwWgtvSGiQ&oe=649725AD") no-repeat top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 
 }
 
 h1{
+    background: none;
+    color: #FFFFFF;
     margin-left: 0.3em;
 }
 
 h2,p{
-    margin-left: 0.3em;
+    margin-left: 1.6em;
     background-color: white;
 }
 
@@ -21,11 +31,17 @@ h2,p{
     margin-top: 1.2em;
 }
 
-#lupa, #enviar_pesquisa{
-    background-color: rgb(236, 236, 236);
-    height: 1.7em;
-    margin-top: 0.2em;
-    width: 1.7em;
+#rec img {
+    border-radius: 10px;
+    margin-right: 70px;
+}
+
+#rec{
+    align-items: center;
+    margin-left: 70px;
+    margin: 1cm;
+    margin-block-end: 1cm;
+    background-color: white;
 }
 
 #saiba_mais{
@@ -34,12 +50,7 @@ h2,p{
     border: none;
     color: white;
     margin-left: 0.8em;
-    width: 8em;
-}
-
-.recomendacoes{
-    background-color: white;
-    width: 1000vh;
+    width: 6em;
 }
 
 #pesquisa_resultado{
@@ -48,7 +59,7 @@ h2,p{
     border-top: 0cm;
     border-left: 0cm;
     border-radius: 10px;
-    color:rgb(236, 236, 236);
+    color:rgb(126, 125, 125);
     font-size: 1.2em ;
     margin-left: 0.8em;
     margin-right: 0.55em;
