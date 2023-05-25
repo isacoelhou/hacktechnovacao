@@ -53,16 +53,16 @@ h2,p{
     width: 6em;
 }
 
-#pesquisa_resultado{
+#pesquisa{
     background-color: white;
     border-color: white;
-    border-top: 0cm;
+    margin-top: 1.5em;
     border-left: 0cm;
     border-radius: 10px;
     color:rgb(126, 125, 125);
     font-size: 1.2em ;
-    margin-left: 0.8em;
-    margin-right: 0.55em;
+    margin-left: 1em;
+    margin-right: 0.8em;
     padding: 0.23em;
-    width: 65em;
+    width: 67em;
 }
