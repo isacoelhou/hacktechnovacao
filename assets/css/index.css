@@ -31,9 +31,17 @@ h2,p{
     margin-top: 1.2em;
 }
 
-#rec img {
+#rec img{
     border-radius: 10px;
     margin-right: 70px;
+}
+
+#rec a{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-right: 17.4em;
+    align-items: center;
+
 }
 
 #rec{
