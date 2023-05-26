@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+    background:  rgb(255, 255, 255);
+
+}
+
+#backg{
+    background: #FFFFFF url("https://scontent.fcac3-1.fna.fbcdn.net/v/t1.6435-9/147489475_1903786203108882_6471014805374559751_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-zjC0wyeUEEAX8sjzTr&_nc_ht=scontent.fcac3-1.fna&oh=00_AfB4WndaXW2WSy_8HRMMGsQCqPDDZhKV_dJZYwWgtvSGiQ&oe=649725AD") no-repeat top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+h1{
+    background: none;
+    color: #FFFFFF;
+    margin-left: 0.3em;
+}
+
+h2,p{
+    margin-left: 1.6em;
+    background-color: white;
+}
+
+#enviar_pesquisa{
+    border: none;
+    background-color: white;
+    margin-top: 1.2em;
+}
+
+#rec img{
+    border-radius: 10px;
+    margin-right: 70px;
+}
+
+#rec a{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-right: 17.4em;
+    align-items: center;
+
+}
+
+#rec{
+    align-items: center;
+    margin-left: 70px;
+    margin: 1cm;
+    margin-block-end: 1cm;
+    background-color: white;
+}
+
+#saiba_mais{
+    font-size: 1.1em;
+    background-color: rgb(122, 122, 122);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-left: 0.8em;
+    width: 6em;
+}
+
+#pesquisa{
+    background-color: white;
+    border-color: white;
+    margin-top: 1.5em;
+    border-left: 0cm;
+    border-radius: 10px;
+    color:rgb(126, 125, 125);
+    font-size: 1.2em ;
+    margin-left: 1em;
+    margin-right: 0.8em;
+    padding: 0.23em;
+    width: 67em;
+}
