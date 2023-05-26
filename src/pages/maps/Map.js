@@ -4,38 +4,33 @@ import { icon } from "leaflet"
 
 const CVEL_POSITION = [-24.95583, -53.45528]
 
-export const markers = [
-	{
-		"name": "Parque Tarquinio",
-		"lat": "-24.971906",
-		"lng": "-53.461688",
-		"url": "https://goo.gl/maps/zA4F84BYBmceqg5d7" 
-	},
-	{
-		"name": "Parque Municipal Paulo Gorski",
-		"lat": "-24.965494",
-		"lng": "-53.433923",
-		"url": "https://goo.gl/maps/euLt5u46bHchrZ6Y6" 
-	},
-	{
-		"name": "Bosque Municipal Elias Lopuch - Bosque Parque Verde",
-		"lat": "-24.940806",
-		"lng": "-53.490475",
-		"url": "https://goo.gl/maps/MLqPGvDC6W5QZq5C9" 
-	},
-	{
-		"name": "Lago Municipal de Cascavel",
-		"lat": "-24.964871",
-		"lng": "-53.436572",
-		"url": "https://goo.gl/maps/GtfzzCsLZhcR8gEA7" 
-	},
-	{
-		"name": "Parque Ambiental Hilário Zardo (Parque Vitória)",
-		"lat": "-24.941542",
-		"lng": "-53.458771",
-		"url": "https://goo.gl/maps/v7abCgsyXv5ydJqJ7" 
-	}
-];
+export var markers = [
+    {
+      name: 'Catedral Metropolitana Nossa Senhora Aparecida',
+      lat: -24.955915,
+      lng: -53.455857,
+      maps: 'https://goo.gl/maps/YfAETAbxMFgHaMr39',
+    },
+    {
+      name: 'Teatro Municipal Sefrin Filho',
+      lat: -24.959290,
+      lng: -53.456288,
+      maps: 'https://goo.gl/maps/Egmu74qAFXgkjSfF9',
+    },
+    {
+      name: 'Zoológico Municipal de Cascavel',
+      lat: -24.949135,
+      lng: -53.432372,
+      maps: 'https://goo.gl/maps/CRbAVEJK8bFpTPke6',
+    },
+    {
+      name: 'Centro Esportivo Ciro Nardi',
+      lat: -24.9636383,
+      lng: -53.4576335,
+      maps: 'https://en.wikipedia.org/wiki/Canada',
+    },
+    
+  ]
 
 
 function GetIcon(iconSize)
@@ -49,10 +44,10 @@ function GetIcon(iconSize)
 export function MarkerPoint(markerLatLng, name, url)
 {
     return <>
-        <Marker position={markerLatLng} icon={GetIcon(20)}>
-            <Popup>
+        <Marker position={markerLatLng} >
+            {/* <Popup>
                 <a href={url}>{name}</a>
-            </Popup>
+            </Popup> */}
         </Marker>
     </>
 }
@@ -63,15 +58,18 @@ export function Maper()
         const currentLatLang = [Number(marker.lat), Number(marker.lng)]
         console.log(`Positions: ${currentLatLang}` )
         return (
+            <a href={marker.url}>
             <Marker position={currentLatLang} icon={GetIcon(20)} key={marker.name}>
                 <Popup>
                     <a href={marker.url}>{marker.name}</a>
                 </Popup>
             </Marker>
+            </a>
         )
     })
+    
     return (
-        <MapContainer center={CVEL_POSITION} zoom={13} scrollWheelZoom={false}>
+        <MapContainer center={CVEL_POSITION} zoom={20} scrollWheelZoom={false}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

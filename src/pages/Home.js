@@ -2,12 +2,12 @@ import { useEffect, useReducer } from "react";
 import "./HomeCss.css";
 import { Maper } from "./maps/Map";
 import "leaflet/dist/leaflet.css";
-
-function Recommendation(image_url)
+function Recommendation(image_url, image_id)
 {
+
   return (
   <div id="rec">
-    <img className="imagery" src={image_url} alt={image_url} height="320" width="350"></img>
+    <a href={`http://localhost:3000/location/${image_id}`}><img className="imagery" src={image_url} alt={image_url} height="320" width="350"></img></a>
   </div>
   )
 }
@@ -31,7 +31,7 @@ async function getRecommendations()
   })
   json_response["all"].forEach(element => {
     if (recommends.length < 5) {
-      recommends.push(Recommendation(element["image_url"]))
+      recommends.push(Recommendation(element["image_url"], element["id"]))
     }
   });
   return recommends
