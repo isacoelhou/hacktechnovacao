@@ -1,11 +1,21 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import "./HeaderCss.css"
+
+function SearchBar()
+{
+  return (
+    <>
+      <input placeholder="    Pesquisar" type="text" id="search"></input>
+    </>
+  )
+}
 
 const Header = () => {
   return (
     <div id="headerDiv">
-      <NavLink to="/" activeStyle={{color: 'green'}} end> Home </NavLink> | 
-      <NavLink to="/login" activeStyle={{color: 'green'}}> Login </NavLink>
+      <SearchBar/>
+      <h1 id="knowThePlace">Conheça o parque municipal</h1>
+      <button id="knowMore"> <a href="./">Saiba mais</a></button>
     </div>
   )
 }

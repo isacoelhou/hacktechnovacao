@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #FFFF;
+}
+
+#headerDiv {
+    height: 100%;
+    width: 100%;
+    background: #FFFF url("https://scontent.fcac3-1.fna.fbcdn.net/v/t1.6435-9/147489475_1903786203108882_6471014805374559751_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-zjC0wyeUEEAX8sjzTr&_nc_ht=scontent.fcac3-1.fna&oh=00_AfB4WndaXW2WSy_8HRMMGsQCqPDDZhKV_dJZYwWgtvSGiQ&oe=649725AD") no-repeat top;
+    background-size: cover;
+}
+
+h1 {
+    background: none;
+    color: #FFFF;
+    margin-top: 10em;
+    margin-left: 1.1em;
+}
+
+#knowThePlace {
+    font-size: 65px;
+}
+
+h2, p {
+    margin: 1.6em;
+    background-color: #FFFF;
+}
+
+#sendSearch {
+    border: none;
+    background-color: #FFFF;
+    margin-top: 1.2em;
+}
+
+#search {
+    margin-left: 5%;
+    background-color: #FFFF;
+    border-color: #FFFF;
+    margin-top: 1.5em;
+    border-left: 0cm;
+    border-radius: 10px;
+    color: rgb(126, 125, 25);
+    font-size: 1.2em;
+    height: 2em;
+    width: 90%;
+}
+
+#knowMore {
+    border: 2px solid rgba(37, 37, 37, 0.818);
+    font-size: 1.5em;
+    font: bolder;
+    text-align: center;
+    vertical-align: auto;
+    padding: 0;
+    background-color: rgba(109, 138, 105, 0.812);
+    border-radius: 13px;
+    color: white;
+    margin-left: 3.2em;
+    margin-top: 0.2em;
+    width: 6em;
+    height: 1.5em;
+    text-decoration: none;
+}
+
+a {
+    background: none;
+    color: #FFFF;
+    font-size: 20px;
+}

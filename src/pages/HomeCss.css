@@ -10,10 +10,27 @@
     height: auto;
 }
 
+#mapRow {
+    width: 100%;
+    background-color: #dcddf890;
+}
+
 #map {  
     height: 440px; 
-    width: 440px;
+    width: 50%;
+    margin: auto auto;
     border: 1px solid #AAA;
+}
+
+#recommendations {
+    width: 100%;
+    height: auto;
+}
+
+#recTitle, #nearYou, #categoriesTitle {
+    color: black;
+    margin: 0.5em;
+    margin-left: 1.6em;
 }
 
 .leaflet-container {
@@ -24,4 +41,25 @@
 #carrousel {
     width: 100%;
     height: auto;
+}
+
+#promoteText {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#rec {
+    width: 25%;
+    height: 100%;
+    margin: auto;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.imagery {
+    border-radius: 10px;
+    height:100%;
+    width: 100%;
 }
